@@ -1,21 +1,15 @@
 .Container{
     background-color: deeppink;
     width: 100%;
-    height: 50px;
+    height: 40px;
     display: flex;
     align-items: center;
 }
-
-.LogoArg{
-   height: 60%;
-}
-
 
 .Contenedor-Logos{
     width: 50%;
-    height: 70px;
+    height: 130%;
     display: flex;
-    align-items: center;
 }
 
 .Contenedor-Redes{
@@ -30,3 +24,31 @@
     color:white
 }
 
+.Banner{
+    width: 100%;
+    height: 13em;
+    border-top: solid violet 4px;
+    border-bottom: solid violet 4px;
+    flex-direction: column;
+    display: flex;
+}
+
+.ImgBan{
+    width: 100%;
+    height: 13em;
+}
+
+.Foto-Perf{
+    width: 145px;
+    height: 145px;
+    position: relative;
+    border-radius: 50%;
+    border: 3px solid blueviolet;
+}
+
+.Foto-Contenedor{
+    width: 90%;
+    height: 90%;
+    margin-top: -80px;
+    margin-left: 25px;
+}
