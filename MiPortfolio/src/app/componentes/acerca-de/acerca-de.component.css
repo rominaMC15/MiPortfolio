@@ -14,8 +14,8 @@
 .imagen{
     height: 140px;
     display: flex;
-    justify-content: flex-end;
-    padding: 2%;
+    justify-content: center;
+    margin-right: 10%;
 }
 
 .texto{
