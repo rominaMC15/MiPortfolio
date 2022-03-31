@@ -1,0 +1,49 @@
+h4, h5{
+    font-family: 'Mali', cursive;
+}
+
+h3{
+    font-family: 'Amaranth', sans-serif;
+}
+
+.titulo{
+    font-family: 'Bebas Neue', cursive;
+    margin-left: 20px;
+}
+
+.experiencia{
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: solid blueviolet 4px;
+    background-color: rgb(255, 122, 184);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.t1, .t2, .t3, .t4{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.seguros, .org, .muni, .org2{
+    width: 110px;
+    height: 70px;
+    margin-right: 20px;
+}
+
+.org, .org2{
+    background-color: white;
+}
+
+.muni{
+    background-color: black;
+}

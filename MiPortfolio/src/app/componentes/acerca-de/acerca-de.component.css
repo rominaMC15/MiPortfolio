@@ -1,37 +1,37 @@
 .acerca-de{
-    width: 100%;
-    height: 360px;
+    border-radius: 22px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    border-bottom: solid violet 4px;
-    background-color: lightsalmon;
-}
-
-.texto{
-    width: 100%;
-    margin-left: 25px;
-    margin-right: 25px;
+    border: solid blueviolet 4px;
+    background-color: rgb(255, 122, 184);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -35px;
+    margin-bottom: 20px;
 }
 
 .imagen{
-    height: 175px;
+    height: 140px;
     display: flex;
     justify-content: flex-end;
-    margin-right: 35px;
+    padding: 2%;
+}
+
+.texto{
+    padding: 2%;
 }
 
 h1{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;  
 }
 
-h2{
-    font-family: 'Dancing Script', cursive;
-    font-size: 40px;
+h3{
+    font-family: 'Amaranth', sans-serif;
 }
+
 
 p{
-    font-family: 'Shadows Into Light', cursive, bold;
-    font-size: 22px;
+    font-family: 'Mali', cursive;
+    font-size: 15px;
 }

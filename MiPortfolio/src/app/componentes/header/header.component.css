@@ -20,16 +20,22 @@
 }
 
 .fab{
-    margin-right: 10px;
+    margin-right: 7.5px;
+    margin-left: 7.5px;
     color:white;
     font-size: 22px;
 }
 
+a:hover {
+    background-color: rgb(230, 152, 253);
+    border-radius: 50%;
+}
+
 .Banner{
     width: 100%;
-    height: 208px;
-    border-top: solid violet 4px;
-    border-bottom: solid violet 4px;
+    height: 13em;
+    border-top: solid blueviolet 4px;
+    border-bottom: solid blueviolet 4px;
     flex-direction: column;
     display: flex;
 }
@@ -37,6 +43,22 @@
 .ImgBan{
     width: 100%;
     height: 13em;
+    position: absolute;
+}
+
+.codigo{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.ImgCod{
+    height: 96px;
+    width: 342px;
+    margin-top: 56px;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
 }
 
 .Foto-Perf{
