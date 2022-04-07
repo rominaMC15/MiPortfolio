@@ -4,7 +4,7 @@
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-                <h1>Mi nombre es Romina</h1>
+                <h1>{{miPortfolio.presentacion}}</h1>
                 <h3>Fullstack Developer WEB Jr y futura Analista en Sistemas.</h3>
                 <br>
                 <p><b>Vivo en Claromecó, Buenos Aires, Argentina.<br>
@@ -15,7 +15,7 @@
         </div>
 
         <div class="imagen">
-            <img alt="tec" src="../../../assets/tecno.jpg" class="img">
+            <img alt="tec" [src]="miPortfolio.img" class="img">
         </div>
 
 </div>
