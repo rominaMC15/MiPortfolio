@@ -1,69 +1,24 @@
-<div class="experiencia">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@200&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2? family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@700&display=swap" rel="stylesheet">
+<div>
     <div class="titulo">
-        <h1><< Experiencias Laborales >></h1>
+        <h1>Experiencias laborales</h1>
     </div>
     
-    <div class="t1">
+    <ul class="experiencia-list">
+        <li *ngFor="let experiencia of experienciaList">
+            <div class="exp">
 
-        <div class="lps">
-            <img alt="seguro" src="../../../assets/la-perseverancia-seguros.png" class="seguros">
-        </div>
+                <div class="exp-img">
+                    <img alt="image" [src]="experiencia.img" class="img">
+                </div>
     
-        <div class="trabajo1">
-            <h3>Pasantía Laboral, La Perseverancia Seguros.</h3>
-            <h4>Agosto - Noviembre 2009.</h4>
-            <h5> Área siniestros, mensajería electrónica, trabajos administrativos varios.</h5>
-        </div>
+                <div class="exp1">
+                    <h3>{{experiencia.empresa}}, {{experiencia.modo}}</h3>
+                    <h4>{{experiencia.puesto}}</h4>
+                    <h5>{{experiencia.comienzo}} - {{experiencia.fin}}</h5>
+                </div>
         
-    </div>
-
-    <div class="t2">
-
-        <div class="odc">
-            <img alt="org" src="../../../assets/Claromecó (162 px).png" class="org">
-        </div>
-        
-        <div class="trabajo2">
-            <h3>Secretaría administrativa, Organismo Descentralizado Claromecó.</h3>
-            <h4>Temporadas 2012 - 2013, 2013 - 2014 y 2014 - 2015.</h4>
-            <h5>Atención al público y trabajos administrativos varios.</h5>
-        </div>
-            
-    </div>
-
-    <div class="t3">
-
-        <div class="muni-tresa">
-            <img alt="muni" src="../../../assets/muni (2).png" class="muni">
-        </div>
-
-        <div class="trabajo3">
-            <h3>Oficina de Turismo Claromecó, Municipalidad de Tres Arroyos</h3>
-            <h4>Temporada 2016 - 2017</h4>
-            <h5>Atención al público, manejo de correo electrónico.</h5>
-        </div>
-
-    </div>
-
-    <div class="t4">
-
-        <div class="odc2">
-            <img alt="org2" src="../../../assets/Claromecó (162 px).png" class="org2">
-        </div>
-    
-        <div class="trabajo4">
-            <h3>Sector cobranzas y Área seguridad, Organismo descentralizado Claromecó.</h3>
-            <h4>Desde abril 2019.</h4>
-            <h5>Tareas administrativas varias, manejo de sistemas gubernamentales, Oracle y monitoreo de cámaras de seguridad. (Trabajo actual).</h5>
-        </div>
-        
-    </div>
-    
-
+            </div>
+        </li>
+    </ul>
 </div>
+

@@ -3,68 +3,54 @@
     "puesto": "Fullstack Developer WEB Jr y futura Analista en Sistemas.",
     "info": "Vivo en Claromecó, Buenos Aires, Argentina. Trabajo actualmente en el sector administrativo municipal y estoy en búsqueda de mi primer empleo IT. Desde pequeña me apasionó la tecnología y hoy tengo la posibilidad de aprender y capacitarme. Me considero una persona creativa, social y solidaria con los demás. Me gustaría muchisimo poder llevar lo aprendido en estos años a un ámbito laboral.",
     "img": "../../../assets/tecno.jpg",
-    "educación":[{
-        "lugar": "Escuela de Educación Media 2.",
-        "cursado": "Secundario completo.",
-        "calificación": 7.83,
-        "título": "Economía y gestión de las organizaciones.",
+    "educacion":[{
+        "lugar": "Escuela de Educación Media 2. Secundario completo.",
+        "titulo": "Economía y gestión de las organizaciones.",
         "img":"../../../assets/nacional.jpg", 
-        "comienzo": "Marzo 2004.",
-        "fin": "Diciembre 2009."
+        "comienzo": "Marzo 2004",
+        "fin": "Diciembre 2009"
     },
     {
-        "lugar": "I.S.F.D. y T. 33.",
-        "cursado": "2 años.",
-        "calificación": 8.50,
-        "título": "Profesorado en Educación Física.",
+        "lugar": "I.S.F.D. y T. 33. 2 años.",
+        "titulo": "Profesorado en Educación Física.",
         "img":"../../../assets/inst 33.jpg", 
-        "comienzo": "Marzo 2010.",
-        "fin": "Diciembre 2011." 
+        "comienzo": "Marzo 2010",
+        "fin": "Diciembre 2011" 
     },
     {
-        "lugar": "Instituto Superior de Informática Virasoro.",
-        "cursado": "En curso.",
-        "calificación": 9.25,
-        "título": "Técnico superior en análisis de sistemas.",
-        "img":"../../../assets/isiv", 
-        "comienzo": "Marzo 2020.",
-        "fin": "Diciembre 2022." 
+        "lugar": "Instituto Superior de Informática Virasoro. En curso.",
+        "titulo": "Técnico superior en análisis de sistemas.",
+        "img":"../../../assets/isiv.png", 
+        "comienzo": "Marzo 2020",
+        "fin": "Diciembre 2022" 
     },
     {
-        "lugar": "Argentina Programa.",
-        "cursado": "En curso.",
-        "calificación": 0,
-        "título": "Programador web Full Stack Junior",
-        "img":"../../../assets/logo-ap", 
-        "comienzo": "Agosto 2021.",
-        "fin": "Mayo 2022." 
+        "lugar": "Argentina Programa. En curso.",
+        "titulo": "Programador web Full Stack Junior.",
+        "img":"../../../assets/logo-ap.png", 
+        "comienzo": "Agosto 2021",
+        "fin": "Mayo 2022" 
     },
     {
-        "lugar": "Argentina Programa.",
-        "cursado": "En Curso.",
-        "calificación": 0,
-        "título": "Inglés aplicado a la programación",
-        "img":"../../../assets/logo-ap", 
-        "comienzo": "Marzo 2022.",
-        "fin": "Mayo 2022." 
+        "lugar": "Argentina Programa. En Curso.",
+        "titulo": "Inglés aplicado a la programación.",
+        "img":"../../../assets/logo-ap.png", 
+        "comienzo": "Marzo 2022",
+        "fin": "Mayo 2022" 
     },
     {
-        "lugar": "Programa codo a codo.",
-        "cursado": "En Curso.",
-        "calificación": 0,
-        "título": "Full stack developer Python.",
-        "img": "../../../assets/codo-a-codo", 
-        "comienzo": "Marzo 2022.",
-        "fin": "Julio 2022." 
+        "lugar": "Programa codo a codo. En Curso.",
+        "titulo": "Full stack developer Python.",
+        "img": "../../../assets/codo-a-codo.png", 
+        "comienzo": "Marzo 2022",
+        "fin": "Julio 2022" 
     },
     {
-        "lugar": "Instituto Superior Politécnico de Córdoba.",
-        "cursado": "En curso.",
-        "calificación": 0,
-        "título": "Técnico en desarollo web y aplicaciones.",
-        "img": "../../../assets/ispc", 
-        "comienzo": "Marzo 2022.",
-        "fin": "Diciembre 2024." 
+        "lugar": "Instituto Superior Politécnico de Córdoba. En curso.",
+        "titulo": "Técnico en desarollo web y aplicaciones.",
+        "img": "../../../assets/ispc.png", 
+        "comienzo": "Marzo 2022",
+        "fin": "Diciembre 2024" 
     }
 ],
 
