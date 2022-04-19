@@ -9,6 +9,8 @@ import { ExperienciaComponent } from './componentes/experiencia/experiencia.comp
 import { PortfolioService } from './servicios/portfolio.service';
 import { HttpClientModule } from '@angular/common/http';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { HabilidadesComponent } from './componentes/habilidades/habilidades.component';
 
 
 
@@ -18,12 +20,14 @@ import { EducacionComponent } from './componentes/educacion/educacion.component'
     HeaderComponent,
     AcercaDeComponent,
     ExperienciaComponent,
-    EducacionComponent
+    EducacionComponent,
+    HabilidadesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [PortfolioService],
   bootstrap: [AppComponent]

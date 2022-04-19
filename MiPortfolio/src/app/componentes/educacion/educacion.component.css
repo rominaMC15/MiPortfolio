@@ -8,10 +8,12 @@ h3{
 
 .titulo{
     font-family: 'Bebas Neue', cursive;
+    margin-top: 20px;
     margin-left: 20px;
+    text-decoration: underline;
 }
 
-.educacion-list{
+.row{
     border-radius: 22px;
     display: flex;
     justify-content: center;

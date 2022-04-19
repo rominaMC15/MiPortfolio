@@ -1,0 +1,19 @@
+.titulo{
+    font-family: 'Bebas Neue', cursive;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+.row{
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border: solid blueviolet 4px;
+    background-color: rgb(255, 122, 184);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
