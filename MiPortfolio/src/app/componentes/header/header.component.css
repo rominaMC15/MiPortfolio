@@ -16,10 +16,10 @@
     width: 50%;
     display: flex;
     justify-content: flex-end;
-    align-content: center;
+    align-items: center;
 }
 
-.fab{
+.fa-brands{
     margin-right: 7.5px;
     margin-left: 7.5px;
     color:white;
@@ -28,7 +28,7 @@
 
 a:hover {
     background-color: rgb(230, 152, 253);
-    border-radius: 50%;
+    border-radius: 30%;
 }
 
 .Banner{
@@ -74,4 +74,25 @@ a:hover {
     height: 100%;
     margin-top: -80px;
     margin-left: 25px;
+}
+
+/*Modal*/
+
+.modal-content{
+    background-color: rgb(252, 185, 224);
+}
+
+.btn-primary{
+    background-color: blueviolet;
+    padding: 3px;
+}
+
+.fa-circle-user{
+    font-size: 30px;
+    padding: 5px;
+}
+
+h4{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
 }
