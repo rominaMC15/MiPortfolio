@@ -1,0 +1,12 @@
+footer{
+    background-color: deeppink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    color: white;
+    border-top: solid blueviolet 4px;
+    border-bottom: solid blueviolet 4px;
+    font-family: 'Amaranth', sans-serif;
+}
