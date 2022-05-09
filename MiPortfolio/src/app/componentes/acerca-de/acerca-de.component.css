@@ -7,7 +7,7 @@
     background-color: rgb(255, 122, 184);
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: -35px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -33,5 +33,20 @@ h3{
 
 p{
     font-family: 'Mali', cursive;
+    font-size: 15px;
+}
+
+.icon{
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.fa-solid{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+h3 .fa-solid{
     font-size: 15px;
 }

@@ -31,50 +31,69 @@ a:hover {
     border-radius: 30%;
 }
 
+/*Banner*/
+
 .Banner{
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    display: flex;
+}
+
+.FotoBan{
+    display: flex;
+    justify-content: flex-end;
     width: 100%;
     height: 13em;
     border-top: solid blueviolet 4px;
     border-bottom: solid blueviolet 4px;
-    flex-direction: column;
-    display: flex;
+    background-image: url(../../../assets/banner-mariposa.jpg);
+    background-size: auto 100%;
 }
 
-.ImgBan{
+.iban{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+
+
+.Foto-Perf{
+    border: 3px solid blueviolet;
     width: 100%;
-    height: 13em;
-    position: absolute;
+    border-radius: 50%;
+}
+
+.Foto-Contenedor{
+    width: 10em;
+    height: 10em;
+    margin-top: -5em;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+.icon2{
+    display: flex;
+    color: white;
+    justify-content: flex-start;
+    width: 95%;
+    margin-top: -2em;
+    margin-left: 2em;
 }
 
 .codigo{
     display: flex;
+    flex-direction: column;
+    color: white;
     justify-content: flex-end;
-    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
-.ImgCod{
-    height: 96px;
-    width: 342px;
-    margin-top: 56px;
-    display: flex;
-    justify-content: flex-end;
-    position: absolute;
+.fa-solid{
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
-.Foto-Perf{
-    width: 10%;
-    height: 10%;
-    position: relative;
-    border-radius: 50%;
-    border: 3px solid blueviolet;
-}
-
-.Foto-Contenedor{
-    width: 100%;
-    height: 100%;
-    margin-top: -80px;
-    margin-left: 25px;
-}
 
 /*Modal*/
 
@@ -96,3 +115,4 @@ h4{
     font-family: 'Bebas Neue', cursive;
     font-size: 40px;
 }
+

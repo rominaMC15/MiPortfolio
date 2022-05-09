@@ -6,6 +6,11 @@ h3{
     font-family: 'Amaranth', sans-serif;
 }
 
+h3 .fa-solid{
+    font-size: 15px;
+    margin-right: 5px;
+}
+
 .titulo{
     font-family: 'Bebas Neue', cursive;
     margin-left: 20px;
