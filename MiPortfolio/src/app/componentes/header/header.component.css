@@ -47,7 +47,7 @@ a:hover {
     height: 13em;
     border-top: solid blueviolet 4px;
     border-bottom: solid blueviolet 4px;
-    background-image: url(../../../assets/banner-mariposa.jpg);
+    /* background-image: url(../../../assets/banner-mariposa.jpg); */
     background-size: auto 100%;
 }
 

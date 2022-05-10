@@ -1,6 +1,6 @@
 { 
     "imgperfil": "../../../assets/roomi.jpg",
-    "img-ban": "../../../assets/banner-mariposa.jpg",
+    "imgban": "../../../assets/banner-mariposa.jpg",
     "presentacion": "Mi nombre es",
     "nombre": "Romina Morán",
     "puesto": "Fullstack Developer WEB Jr y futura Analista en Sistemas.",
