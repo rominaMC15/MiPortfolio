@@ -50,3 +50,41 @@ p{
 h3 .fa-solid{
     font-size: 15px;
 }
+
+/*Div CRUD*/
+
+.datos{
+    display: none;
+    flex-direction: column;
+    padding: 1vh;
+    align-items: center;
+    border: solid blueviolet 4px;
+    background-color: rgb(255, 122, 184);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 22px;
+}
+
+label{
+	color: white;
+	display: block;
+	text-align:start;
+	font-size: 3vh;
+	padding: 0px;
+    margin: 2vh;
+}
+
+input[type="text"]{
+	width: 360px;
+	height: auto;
+	display: block;
+	padding: 1vh;
+	font-weight: bolder;
+	border: 1px solid black;
+    border-radius: 8px;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    background-color: white;
+}

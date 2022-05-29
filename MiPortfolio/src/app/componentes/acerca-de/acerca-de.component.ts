@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FaLayersTextComponent } from '@fortawesome/angular-fontawesome';
 import { PortfolioService } from 'src/app/servicios/portfolio.service';
 
 @Component({
@@ -17,4 +18,7 @@ export class AcercaDeComponent implements OnInit {
     });
   }
 
+  visible(){
+    
+  }
 }

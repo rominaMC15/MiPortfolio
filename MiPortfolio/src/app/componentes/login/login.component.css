@@ -1,0 +1,18 @@
+.modal-content{
+    background-color: rgb(252, 185, 224);
+}
+
+.btn-primary{
+    background-color: blueviolet;
+    padding: 3px;
+}
+
+.fa-circle-user{
+    font-size: 30px;
+    padding: 5px;
+}
+
+h4{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+}

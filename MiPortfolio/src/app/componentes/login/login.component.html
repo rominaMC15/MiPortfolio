@@ -1,0 +1,35 @@
+<!-- modal -->
+<button type="button" class="btn btn-primary" (click)="openPopup()"   >Iniciar Sesión </button>
+
+    <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle}">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+        <h4 class="modal-title">Bienvenido!<i class="fa-solid fa-circle-user"></i></h4>
+    </div>
+    <div class="modal-body">
+        <div class="was-validated" >
+            <div class="mb-3 mt-3">
+              <label for="uname" class="form-label">Usuario:</label>
+              <!-- <input name="uname" type="text" formControlName="uname" class="form-control" id="uname" placeholder="Ingrese Usuario" [(ngModel)]="user2"> -->
+              <input type="text" placeholder="Usuario" id="uname">
+              <!-- <div class="valid-feedback">Correcto.</div> -->
+              <div class="invalid-feedback">Es necesario ingresar un usuario.</div>
+            </div>
+            <div class="mb-3">
+              <label for="pwd" class="form-label">Contraseña:</label>
+              <!-- <input name="upassword" type="password" formControlName="upassword" class="form-control" id="pwd" placeholder="Ingrese contraseña" [(ngModel)]="pass2"> -->
+              <input type="text" placeholder="Contraseña" id="pwd" >
+              <div class="invalid-feedback">Es necesario ingresar su contraseña.</div>
+            </div>
+        </div>
+
+    </div>
+        <div class="modal-footer">
+            <button type="submit" class="btn btn-danger" (click)="autenticar()" >Confirmar</button>
+            <button type="submit" class="btn btn-danger" (click)="closePopup()">Cerrar</button>
+        </div>
+    </div>
+</div>
+          
+</div>

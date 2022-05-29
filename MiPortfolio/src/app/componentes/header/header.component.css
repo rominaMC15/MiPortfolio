@@ -51,7 +51,7 @@ a:hover {
     background-size: auto 100%;
 }
 
-.iban{
+.icon{
     display: flex;
     justify-content: flex-end;
     margin-top: 5px;
@@ -94,25 +94,8 @@ a:hover {
     margin-right: 5px;
 }
 
+/* .fa-pencil{
+    display: none;    
+} */
 
-/*Modal*/
-
-.modal-content{
-    background-color: rgb(252, 185, 224);
-}
-
-.btn-primary{
-    background-color: blueviolet;
-    padding: 3px;
-}
-
-.fa-circle-user{
-    font-size: 30px;
-    padding: 5px;
-}
-
-h4{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 40px;
-}
 

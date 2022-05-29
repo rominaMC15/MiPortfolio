@@ -16,13 +16,4 @@ export class HeaderComponent implements OnInit {
     });
   }
 
-  displayStyle = "none";
-  
-  openPopup() {
-    this.displayStyle = "block";
-  }
-  closePopup() {
-    this.displayStyle = "none";
-  }
-
 }

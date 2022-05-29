@@ -52,3 +52,34 @@ li{
     background-color: rgb(37, 128, 202);
     border-radius: 15%;
 }
+
+/*Div CRUD*/
+
+.datos{
+    display: none;
+    flex-direction: column;
+    padding: 1vh;
+    align-items: center;
+}
+
+label{
+	color: white;
+	display: block;
+	text-align:start;
+	font-size: 3vh;
+	padding: 0px;
+    margin: 2vh;
+}
+
+input[type="text"]{
+	width: 360px;
+	height: auto;
+	display: block;
+	padding: 1vh;
+	font-weight: bolder;
+	border: 1px solid black;
+    border-radius: 8px;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    background-color: white;
+}
