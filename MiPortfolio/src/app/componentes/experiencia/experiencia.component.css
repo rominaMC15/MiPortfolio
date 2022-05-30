@@ -56,7 +56,7 @@ li{
 /*Div CRUD*/
 
 .datos{
-    display: none;
+    display: flex;
     flex-direction: column;
     padding: 1vh;
     align-items: center;
@@ -82,4 +82,25 @@ input[type="text"]{
     margin-left: 2vh;
     margin-right: 2vh;
     background-color: white;
+}
+
+a{
+    cursor: pointer;
+}
+
+.icon{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 1vh;
+}
+
+.fa-solid{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+h3 .fa-solid{
+    font-size: 15px;
 }

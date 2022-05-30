@@ -12,8 +12,7 @@
                 </div>
     
                 <div class="educ1">
-                    <h3>{{educacion.lugar}} <i class="fa-solid fa-pencil"></i>
-                        <i class="fa-solid fa-trash-can"></i></h3>
+                    <h3>{{educacion.lugar}}</h3>
                     <h4>{{educacion.titulo}}</h4>
                     <h5>{{educacion.comienzo}} - {{educacion.fin}}</h5>
                 </div>
@@ -22,7 +21,12 @@
         </li>
     </ul>
 
-    <div class="datos">
+    <div class="icon">
+        <a (click)="Editar()"><i class="fa-solid fa-pencil"></i></a>
+        <i class="fa-solid fa-trash-can"></i>
+    </div>
+
+    <div class="datos" *ngIf="edit">
         <label for="">Ingrese su establecimiento:</label>
         <input type="text" id="establecimiento" placeholder="Establecimiento">
         <label for="">Ingrese título obtenido:</label>

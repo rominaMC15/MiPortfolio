@@ -12,8 +12,7 @@
                 </div>
     
                 <div class="exp1">
-                    <h3>{{experiencia.empresa}}, {{experiencia.modo}} <i class="fa-solid fa-pencil"></i>
-                        <i class="fa-solid fa-trash-can"></i></h3>
+                    <h3>{{experiencia.empresa}}, {{experiencia.modo}}</h3>
                     <h4>{{experiencia.puesto}}</h4>
                     <h5>{{experiencia.comienzo}} - {{experiencia.fin}}</h5>
                 </div>
@@ -22,7 +21,11 @@
             </div>
         </li>
     </ul>
-    <div class="datos">
+    <div class="icon">
+        <a (click)="Editar()"><i class="fa-solid fa-pencil"></i></a>
+        <i class="fa-solid fa-trash-can"></i>
+    </div>
+    <div class="datos" *ngIf="edit">
         <label for="">Ingrese puesto:</label>
         <input type="text" id="puesto" placeholder="Puesto">
         <label for="">Ingrese empresa:</label>
