@@ -9,6 +9,8 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
 })
 export class AcercaDeComponent implements OnInit {
   miPortfolio:any;
+  edit:boolean=false;
+
   constructor(private datosPortfolio:PortfolioService) { }
 
   ngOnInit(): void {
@@ -16,9 +18,11 @@ export class AcercaDeComponent implements OnInit {
       console.log(data);
       this.miPortfolio=data;
     });
+  };
+
+  Editar(){
+    this.edit=!this.edit;
   }
 
-  visible(){
-    
-  }
 }
+

@@ -8,9 +8,11 @@
                 <p><b>{{miPortfolio.info}}</b></p>
 
                 <div class="icon">
-                        <a onclick=Visible()><i class="fa-solid fa-pencil"></i></a>
+                        <a (click)="Editar()"><i class="fa-solid fa-pencil"></i></a>
                         <i class="fa-solid fa-trash-can"></i>
                 </div>
+
+                
         
         </div>
 
@@ -21,7 +23,7 @@
         
 </div>
 
-<div class="datos">
+<div class="datos"  *ngIf="edit" >
         <label for="">Ingrese su nombre:</label>
         <input type="text" id="nombre" placeholder="Su nombre">
         <label for="">Ingrese su puesto actual:</label>

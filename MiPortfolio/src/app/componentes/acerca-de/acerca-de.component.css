@@ -54,7 +54,7 @@ h3 .fa-solid{
 /*Div CRUD*/
 
 .datos{
-    display: none;
+    display: flex;
     flex-direction: column;
     padding: 1vh;
     align-items: center;
@@ -87,4 +87,8 @@ input[type="text"]{
     margin-left: 2vh;
     margin-right: 2vh;
     background-color: white;
+}
+
+a{
+    cursor: pointer;
 }
