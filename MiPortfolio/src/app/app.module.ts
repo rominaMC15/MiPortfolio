@@ -17,6 +17,7 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { Login2Component } from './componentes/login2/login2.component';
 import { Login3Component } from './componentes/login3/login3.component';
+import { IconsComponent } from './componentes/icons/icons.component';
 
 
 
@@ -32,7 +33,8 @@ import { Login3Component } from './componentes/login3/login3.component';
     FooterComponent,
     LoginComponent,
     Login2Component,
-    Login3Component
+    Login3Component,
+    IconsComponent
   ],
   imports: [
     BrowserModule,

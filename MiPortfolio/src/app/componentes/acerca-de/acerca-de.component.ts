@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FaLayersTextComponent } from '@fortawesome/angular-fontawesome';
+import { EditServiceService } from 'src/app/servicios/edit-service.service';
 import { PortfolioService } from 'src/app/servicios/portfolio.service';
 
 @Component({
@@ -11,7 +12,7 @@ export class AcercaDeComponent implements OnInit {
   miPortfolio:any;
   edit:boolean=false;
 
-  constructor(private datosPortfolio:PortfolioService) { }
+  constructor(private datosPortfolio:PortfolioService, public editServiceService:EditServiceService) { }
 
   ngOnInit(): void {
     this.datosPortfolio.obtenerDatos().subscribe(data => {
@@ -22,6 +23,7 @@ export class AcercaDeComponent implements OnInit {
 
   Editar(){
     this.edit=!this.edit;
+    
   }
 
 }

@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, FormControl ,Validators } from '@angular/forms';
-import { debounceTime } from 'rxjs';
+import { Component, Input, OnInit } from '@angular/core';
+import { EditServiceService } from 'src/app/servicios/edit-service.service';
 
 @Component({
   selector: 'app-login',
@@ -9,14 +8,17 @@ import { debounceTime } from 'rxjs';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { 
+  @Input() btn:string='Iniciar Sesión'
+  login:boolean=true;
+  logout:boolean=false;
+  usuario:string='';
+  contra:string='';
+
+  constructor(public editServiceService:EditServiceService) { 
     
    }
   
   ngOnInit(): void { }
-
-
-  
   
   displayStyle = "none";
   
@@ -30,43 +32,17 @@ export class LoginComponent implements OnInit {
     this.displayStyle = "none";
   }
   
-  
-  login:boolean=true;
-  logout:boolean=false;
-  uname:string="";
-  pwd:string="";
-  user:string="";
-  password:string="";
-  pass2:string="";
-  user2:string="";
-  valor1:string="";
-  valor2:string="";
   autenticar(){
-    
-    let valor1 = document.getElementById('uname') as HTMLInputElement
-    let valor2 = document.getElementById('pwd') as HTMLInputElement
-    
-    // let uname = valor1?.value;
-    // let password = valor2?.value;
-    console.log(this.user2, this.pass2);
-    
 
-    if ((this.valor1 == "Romina") && (this.valor2 == "1234")){
-      console.log(this.valor1 + this.valor2);
-      this.logout = false;
-      this.login = true;
+    if ((this.usuario == "Romina") && (this.contra == "1234")){
+      console.log(this.usuario + this.contra);
+      this.editServiceService.valorIcon = true;
       this.displayStyle = "none";
-
-
-    }else{
-      this.login = false;
-      this.logout = true;
-      alert("El usuario o contraseña no coincide!")
+      }else{
+         alert("El usuario o contraseña no coincide!")
     }
-
   }
 
-  
 }
 
  
