@@ -1,5 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { EditServiceService } from 'src/app/servicios/edit-service.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +9,10 @@ import { EditServiceService } from 'src/app/servicios/edit-service.service';
 })
 export class LoginComponent implements OnInit {
 
-  @Input() btn:string='Iniciar Sesión'
+  @Input() btn:string= 'Iniciar Sesión';
+  @Output() btnClick = new EventEmitter();
+  cambioBtn:boolean = false;
+  subscription?: Subscription;
   login:boolean=true;
   logout:boolean=false;
   usuario:string='';
@@ -26,6 +30,7 @@ export class LoginComponent implements OnInit {
   openPopup() {
     this.displayStyle = "block";
     this.login = !this.login;
+    this.btnClick.emit();
   }
   
   closePopup() {
@@ -37,9 +42,23 @@ export class LoginComponent implements OnInit {
     if ((this.usuario == "Romina") && (this.contra == "1234")){
       console.log(this.usuario + this.contra);
       this.editServiceService.valorIcon = true;
+      this.btn = 'Salir edición';
       this.displayStyle = "none";
       }else{
          alert("El usuario o contraseña no coincide!")
+    }
+  }
+
+  toggleEdit(){
+    this.editServiceService.toggleEdit();
+  }
+
+  edicion(){
+    if (this.btn == 'Salir edición'){
+      this.editServiceService.valorIcon = false;
+      this.btn = 'Iniciar Sesión';
+      this.displayStyle = "none";
+      window.location.reload();
     }
   }
 
