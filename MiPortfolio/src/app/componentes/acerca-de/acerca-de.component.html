@@ -1,11 +1,11 @@
 <div class="acerca-de">
 
-        <div class="texto">
-                <h1>{{miPortfolio.presentacion}} {{miPortfolio.nombre}}</h1>
-                <h3>{{miPortfolio.puesto}}</h3>
+        <div class="texto" *ngIf="acercaDe">
+                <h1>{{acercaDe.presentacion}} {{acercaDe.nombre}}</h1>
+                <h3>{{acercaDe.puesto}}</h3>
                 
                 <br>
-                <p><b>{{miPortfolio.info}}</b></p>
+                <p><b>{{acercaDe.info}}</b></p>
 
                 <div class="icon">
                         <a (click)="Editar()"><app-icons></app-icons></a>
@@ -15,8 +15,8 @@
         
         </div>
 
-        <div class="imagen">
-            <img alt="tec" [src]="miPortfolio.img" class="img">
+        <div class="imagen" *ngIf="acercaDe">
+            <img alt="tec" src={{acercaDe.img}} class="img">
         </div>
 
         
