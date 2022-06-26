@@ -4,14 +4,14 @@
     </div>
     
     <ul class="experiencia-list">
-        <li *ngFor="let experiencia of experienciaList">
+        <li *ngFor="let experiencia of experiencia">
             <div class="exp">
 
-                <div class="exp-img">
-                    <img alt="image" [src]="experiencia.img" class="img">
+                <div class="exp-img" *ngIf="experiencia">
+                    <img alt="image" src={{experiencia.img}} class="img">
                 </div>
     
-                <div class="exp1">
+                <div class="exp1" *ngIf="experiencia">
                     <h3>{{experiencia.empresa}}, {{experiencia.modo}}</h3>
                     <h4>{{experiencia.puesto}}</h4>
                     <h5>{{experiencia.comienzo}} - {{experiencia.fin}}</h5>

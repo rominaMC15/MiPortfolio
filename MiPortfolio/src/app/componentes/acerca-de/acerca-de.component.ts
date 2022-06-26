@@ -19,14 +19,31 @@ export class AcercaDeComponent implements OnInit {
     public acercaDe : AcercaDe | undefined;
     public editDatos : AcercaDe | undefined;
 
-  ngOnInit(): void {
+  // ngOnInit(): void {
 
-    this.datosPortfolio.obtenerDatos().subscribe(data => {
-      console.log(data);
-      this.miPortfolio=data;
+  //   // this.datosPortfolio.obtenerDatos().subscribe(data => {
+  //   //   console.log(data);
+  //   //   this.miPortfolio=data;
+  //   // });
+
+  //   this.getDatos();
+
+  // };
+
+  ngOnInit(): void {
+ 
+    // this.datosPortfolio.obtenerDatos().subscribe(data => {
+    //   //console.log(data);
+    //   this.miPortfolio=data;
+    //   console.log(this.miPortfolio);
+    // });
+    this.datosPortfolio.getDatos().subscribe(data => {
+      this.acercaDe=data[0];
+      console.log(this.acercaDe);
     });
 
-    this.getDatos();
+
+    //this.getDatos();
 
   };
 

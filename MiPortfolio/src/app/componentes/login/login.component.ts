@@ -9,8 +9,8 @@ import { Subscription } from 'rxjs';
 })
 export class LoginComponent implements OnInit {
 
-  @Input() btn:string= 'Iniciar Sesión';
-  @Output() btnClick = new EventEmitter();
+  btn:string= 'Iniciar Sesión';
+  btnClick = new EventEmitter();
   cambioBtn:boolean = false;
   subscription?: Subscription;
   login:boolean=true;

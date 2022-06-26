@@ -7,7 +7,7 @@
     "info": "Vivo en Claromecó, Buenos Aires, Argentina. Trabajo actualmente en el sector administrativo municipal y estoy en búsqueda de mi primer empleo IT. Desde pequeña me apasionó la tecnología y hoy tengo la posibilidad de aprender y capacitarme. Me considero una persona creativa, social y solidaria con los demás. Me gustaría muchisimo poder llevar lo aprendido en estos años a un ámbito laboral.",
     "img": "../../../assets/tecno.jpg",
 
-    "educacion":[{
+    "edu":[{
         "lugar": "Escuela de Educación Media 2. (Secundario completo).",
         "titulo": "Economía y gestión de las organizaciones.",
         "img":"../../../assets/nacional.jpg", 
@@ -58,7 +58,7 @@
     }
 ],
 
-    "experiencia":[{
+    "exp":[{
         "puesto": "Área siniestros. Mensajería electrónica, trabajos administrativos varios.",
         "empresa": "La Perseverancia Seguros.",
         "img": "../../../assets/la-perseverancia-seguros.png",

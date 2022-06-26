@@ -4,14 +4,14 @@
     </div>
     
     <ul class="educacion-list">
-        <li *ngFor="let educacion of educacionList">
+        <li *ngFor="let educacion of educacion">
             <div class="edu">
 
-                <div class="img-edu">
-                    <img alt="image" [src]="educacion.img" class="img">
+                <div class="img-edu" *ngIf="educacion">
+                    <img alt="image" src={{educacion.img}} class="img">
                 </div>
     
-                <div class="educ1">
+                <div class="educ1" *ngIf="educacion">
                     <h3>{{educacion.lugar}}</h3>
                     <h4>{{educacion.titulo}}</h4>
                     <h5>{{educacion.comienzo}} - {{educacion.fin}}</h5>
