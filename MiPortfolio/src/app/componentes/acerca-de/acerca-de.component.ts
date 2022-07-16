@@ -13,11 +13,13 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
 export class AcercaDeComponent implements OnInit {
   miPortfolio:any;
   edit:boolean=false;
+  editable:string="";
 
   constructor(private datosPortfolio:PortfolioService, public editServiceService:EditServiceService) { }
 
     public acercaDe : AcercaDe | undefined;
     public editDatos : AcercaDe | undefined;
+    // public editable: AcercaDe | undefined;
 
   // ngOnInit(): void {
 
@@ -57,6 +59,26 @@ export class AcercaDeComponent implements OnInit {
         this.acercaDe=response;
       }
     })
+  }
+
+  // public onEditar(acercaDe:AcercaDe){
+  //   this.acercaDe = this.editable;
+  //   this.miPortfolio.actualizarDatos(acercaDe).subscribe({
+  //     next: (response: AcercaDe) => {
+  //       console.log(response)
+  //       this.getDatos();
+  //     }
+  //   })
+  //}
+
+  onEditar(){
+    this.Editar()
+    if(this.editable == ""){
+      this.editable = this.acercaDe?.nombre;
+    }else{
+      this.acercaDe?.nombre=this.editable;
+    }
+
   }
     
   

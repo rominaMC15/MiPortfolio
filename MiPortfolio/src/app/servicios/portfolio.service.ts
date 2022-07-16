@@ -42,6 +42,9 @@ export class PortfolioService {
   public actualizarDatos(acercaDe: AcercaDe):Observable<AcercaDe>{
     return this.http.put<AcercaDe>(`${this.apiServerUrl}/persona/update`,acercaDe);
   }
+
+  //AGREGAR DATOS
+  
     
   }
 

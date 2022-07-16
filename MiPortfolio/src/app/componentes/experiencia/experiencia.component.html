@@ -12,6 +12,9 @@
                 </div>
     
                 <div class="exp1" *ngIf="experiencia">
+                    <div class="icon">
+                        <a (click)="Editar()"><app-icons></app-icons></a>
+                    </div>
                     <h3>{{experiencia.empresa}}, {{experiencia.modo}}</h3>
                     <h4>{{experiencia.puesto}}</h4>
                     <h5>{{experiencia.comienzo}} - {{experiencia.fin}}</h5>
@@ -21,9 +24,9 @@
             </div>
         </li>
     </ul>
-    <div class="icon">
+    <!-- <div class="icon">
         <a (click)="Editar()"><app-icons></app-icons></a>
-    </div>
+    </div> -->
     <div class="datos" *ngIf="edit">
         <label for="">Ingrese puesto:</label>
         <input type="text" id="puesto" placeholder="Puesto">

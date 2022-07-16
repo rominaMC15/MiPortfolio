@@ -10,8 +10,12 @@
                 <div class="img-edu" *ngIf="educacion">
                     <img alt="image" src={{educacion.img}} class="img">
                 </div>
+                
     
                 <div class="educ1" *ngIf="educacion">
+                    <div class="icon">
+                        <a (click)="Editar()"><app-icons></app-icons></a>
+                    </div>
                     <h3>{{educacion.lugar}}</h3>
                     <h4>{{educacion.titulo}}</h4>
                     <h5>{{educacion.comienzo}} - {{educacion.fin}}</h5>
@@ -21,9 +25,9 @@
         </li>
     </ul>
 
-    <div class="icon">
+    <!-- <div class="icon">
         <a (click)="Editar()"><app-icons></app-icons></a>
-    </div>
+    </div> -->
 
     <div class="datos" *ngIf="edit">
         <label for="">Ingrese su establecimiento:</label>

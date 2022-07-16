@@ -90,6 +90,14 @@ input[type="text"]{
     background-color: white;
 }
 
+#btnedit{
+    background-color: blueviolet;
+    padding: 3px;
+    border-radius: 10px;
+    margin: 5px;
+    color: white;
+}
+
 a{
     cursor: pointer;
 }

@@ -5,6 +5,4 @@ export interface AcercaDe {
     puesto:string;
     info:string;
     img:string;
-    imgperfil:string;
-    imgban:string;
 }
