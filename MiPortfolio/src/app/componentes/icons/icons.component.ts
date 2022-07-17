@@ -14,10 +14,10 @@ export class IconsComponent implements OnInit {
     this.editIcon = this.editServiceService.valorIcon;
   }
   onEdit(){
-    console.log("editando");
+    // console.log("editando");
   }
   onDelete(valQuien:string){
-    console.log("borrando");
+    // console.log("borrando");
   }
 
   onToggle(){

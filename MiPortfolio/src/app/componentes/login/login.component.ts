@@ -40,7 +40,7 @@ export class LoginComponent implements OnInit {
   autenticar(){
 
     if ((this.usuario == "Romina") && (this.contra == "1234")){
-      console.log(this.usuario + this.contra);
+      // console.log(this.usuario + this.contra);
       this.editServiceService.valorIcon = true;
       this.btn = 'Salir edición';
       this.displayStyle = "none";

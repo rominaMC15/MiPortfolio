@@ -22,15 +22,15 @@
         
 </div>
 
-<div class="datos"  *ngIf="edit" [(ngModel)]="editable" >
+<div class="datos"  *ngIf="edit" >
         <label for="">Ingrese su nombre:</label>
-        <input type="text" id="nombre"  ngModel="{{editable.nombre}}" placeholder="Su nombre">
+        <input type="text" id="nombre"  [(ngModel)]="editable.nombre" placeholder="Su nombre">
         <label for="">Ingrese su puesto actual:</label>
-        <input type="text" id="puestopres" ngModel="{{editable.puesto}}" placeholder="Puesto Actual">
+        <input type="text" id="puestopres" [(ngModel)]="editable.puesto" placeholder="Puesto Actual">
         <label for="">Ingrese su información:</label>
-        <input type="text" id="informacion" ngModel="{{editable.info}}" placeholder="Su Información">
+        <input type="text" id="informacion" [(ngModel)]="editable.info" placeholder="Su Información">
         <label for="">Ingrese URL imagen:</label>
-        <input type="text" id="imgpres" ngModel="{{editable.img}}" placeholder="URL Imagen">
+        <input type="text" id="imgpres" [(ngModel)]="editable.img" placeholder="URL Imagen">
         <button type="button" id="btnedit" (click)="onEditar()">Aceptar</button>
         <button type="button" (click)="Editar()">Cerrar</button>
 
