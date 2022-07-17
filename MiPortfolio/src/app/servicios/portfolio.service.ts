@@ -52,6 +52,22 @@ export class PortfolioService {
   }
 
   //AGREGAR DATOS
+  public agregarDatosEdu(dato:any):Observable<Educacion>{
+    return this.http.post<Educacion>(`${this.apiServerUrl}/educacion/new`,dato);
+  }
+
+  public agregarDatosExp(dato:any):Observable<Experiencia>{
+    return this.http.post<Experiencia>(`${this.apiServerUrl}/experiencia/new`,dato);
+  }
+
+  //BORRAR DATOS
+  public borrarEdu(dato:any):Observable<Educacion>{
+    return this.http.delete<Educacion>(`${this.apiServerUrl}/educacion/delete/${dato.id}`);
+  }
+
+  public borrarExp(dato:any):Observable<Experiencia>{
+    return this.http.delete<Experiencia>(`${this.apiServerUrl}/experiencia/delete/${dato.id}`)
+  }
   
     
   }

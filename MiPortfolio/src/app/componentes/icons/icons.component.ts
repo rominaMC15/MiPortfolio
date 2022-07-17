@@ -16,9 +16,9 @@ export class IconsComponent implements OnInit {
   onEdit(){
     // console.log("editando");
   }
-  onDelete(valQuien:string){
-    // console.log("borrando");
-  }
+  // onDelete(valQuien:string){
+  //   // console.log("borrando");
+  // }
 
   onToggle(){
     this.editIcon = this.editServiceService.valorIcon;

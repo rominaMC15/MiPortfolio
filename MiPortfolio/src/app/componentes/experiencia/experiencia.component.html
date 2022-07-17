@@ -14,6 +14,7 @@
                 <div class="exp1" *ngIf="experiencia">
                     <div class="icon">
                         <a (click)="Editar(experiencia)"><app-icons></app-icons></a>
+                        <a (click)="onBorrar(experiencia)" ><app-icons-trash></app-icons-trash></a>
                     </div>
                     <h3>{{experiencia.empresa}}, {{experiencia.modo}}</h3>
                     <h4>{{experiencia.puesto}}</h4>

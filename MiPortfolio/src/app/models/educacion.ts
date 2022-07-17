@@ -1,5 +1,5 @@
 export interface Educacion {
-    id:number;
+    id?:number;
     lugar:string;
     titulo:string;
     img:string;

@@ -17,7 +17,7 @@ export class ExperienciaComponent implements OnInit {
   public experiencia : Experiencia[] = [];
   public editDatos : Experiencia | undefined;
   exp:Experiencia={"id":0,"puesto":"","empresa":"","img":"","modo":"","comienzo":"","fin":""}
-
+  tempExp:Experiencia={"id":0,"puesto":"","empresa":"","img":"","modo":"","comienzo":"","fin":""}
   ngOnInit(): void {
     // this.datosPortfolio.obtenerDatos().subscribe(data=>{
     //   this.experienciaList=data.experiencia;
@@ -35,6 +35,16 @@ export class ExperienciaComponent implements OnInit {
     this.datosPortfolio.actualizarDatosExp(this.exp).subscribe({
       next: (response:Experiencia) => {
         alert("Sus datos han sido modificados!")
+        this.ngOnInit();
+      }
+    })
+  }
+
+  onBorrar(id:Experiencia){
+    this.tempExp=id;
+    this.datosPortfolio.borrarExp(this.tempExp).subscribe({
+      next: (response:Experiencia) => {
+        alert("Dato eliminado exitosamente!")
         this.ngOnInit();
       }
     })
