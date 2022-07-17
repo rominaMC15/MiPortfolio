@@ -47,6 +47,10 @@ export class PortfolioService {
     return this.http.put<Educacion>(`${this.apiServerUrl}/educacion/update`,dato);
   }
 
+  public actualizarDatosExp(dato:any):Observable<Experiencia>{
+    return this.http.put<Experiencia>(`${this.apiServerUrl}/experiencia/update`,dato);
+  }
+
   //AGREGAR DATOS
   
     
