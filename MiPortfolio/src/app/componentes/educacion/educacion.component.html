@@ -14,7 +14,7 @@
     
                 <div class="educ1" *ngIf="educacion">
                     <div class="icon">
-                        <a (click)="Editar()"><app-icons></app-icons></a>
+                        <a (click)="Editar(educacion)"><app-icons></app-icons></a>
                     </div>
                     <h3>{{educacion.lugar}}</h3>
                     <h4>{{educacion.titulo}}</h4>
@@ -31,15 +31,17 @@
 
     <div class="datos" *ngIf="edit">
         <label for="">Ingrese su establecimiento:</label>
-        <input type="text" id="establecimiento" placeholder="Establecimiento">
+        <input type="text" id="establecimiento" placeholder="Establecimiento" [(ngModel)]="temporal.lugar" >
         <label for="">Ingrese título obtenido:</label>
-        <input type="text" id="titulo" placeholder="Título">
+        <input type="text" id="titulo" placeholder="Título" [(ngModel)]="temporal.titulo" >
         <label for="">Ingrese el logo de la institución:</label>
-        <input type="text" id="logoest" placeholder="URL del logo de la Institutción">
+        <input type="text" id="logoest" placeholder="URL del logo de la Institutción" [(ngModel)]="temporal.img" >
         <label for="">Ingrese fecha de comienzo:</label>
-        <input type="text" id="comienzoest" placeholder="Fecha de comienzo">
+        <input type="text" id="comienzoest" placeholder="Fecha de comienzo" [(ngModel)]="temporal.comienzo" >
         <label for="">Ingrese fecha de fin:</label>
-        <input type="text" id="finest" placeholder="Fecha de fin">
+        <input type="text" id="finest" placeholder="Fecha de fin" [(ngModel)]="temporal.fin" >
+        <button (click)="Editar(temporal)">Cerrar</button>
+        <button (click)="onEditar()" >Confirmar</button>
     </div>
 
 </div>

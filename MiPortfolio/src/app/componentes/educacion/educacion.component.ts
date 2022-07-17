@@ -17,6 +17,8 @@ export class EducacionComponent implements OnInit {
   public educacion : Educacion[] = [];
   public editDatos : Educacion | undefined;
 
+  temporal:Educacion={"id":0,"lugar":"","titulo":"","img":"","comienzo":"","fin":""}
+
   ngOnInit(): void {
     // this.datosPortfolio.obtenerDatos().subscribe(data=>{
     //   this.educacionList=data.educacion;
@@ -25,9 +27,20 @@ export class EducacionComponent implements OnInit {
     this.getDatosEducacion();
   }
 
-  Editar(){
+  Editar(dato:Educacion){
     this.edit=!this.edit;
+    this.temporal=dato;
   }
+
+  onEditar(){
+    this.datosPortfolio.actualizarDatosEdu(this.temporal).subscribe({
+      next: (response:Educacion) => {
+        alert("Sus datos han sido modificados!")
+        this.ngOnInit();
+      }
+    })
+  }
+  
 
   public getDatosEducacion():void{
     this.datosPortfolio.getDatosEducacion().subscribe({

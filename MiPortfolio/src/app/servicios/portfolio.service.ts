@@ -43,6 +43,10 @@ export class PortfolioService {
     return this.http.put<AcercaDe>(`${this.apiServerUrl}/persona/update`,acercaDe);
   }
 
+  public actualizarDatosEdu(dato:any):Observable<Educacion>{
+    return this.http.put<Educacion>(`${this.apiServerUrl}/educacion/update`,dato);
+  }
+
   //AGREGAR DATOS
   
     
