@@ -13,11 +13,11 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
 export class AcercaDeComponent implements OnInit {
   miPortfolio:any;
   edit:boolean=false;
-  editable:string="";
+  editable:AcercaDe={id:0,presentacion:"Mi nombre es",nombre:"",puesto:"",info:"",img:"../../../assets/tecno.jpg"};
 
   constructor(private datosPortfolio:PortfolioService, public editServiceService:EditServiceService) { }
 
-    public acercaDe : AcercaDe | undefined;
+    public acercaDe : AcercaDe={id:0,presentacion:"Mi nombre es",nombre:"",puesto:"",info:"",img:"../../../assets/tecno.jpg"};
     public editDatos : AcercaDe | undefined;
     // public editable: AcercaDe | undefined;
 
@@ -72,13 +72,37 @@ export class AcercaDeComponent implements OnInit {
   //}
 
   onEditar(){
-    this.Editar()
-    if(this.editable == ""){
-      this.editable = this.acercaDe?.nombre;
-    }else{
-      this.acercaDe?.nombre=this.editable;
-    }
+    // if(this.editable.nombre == ""){
+    // this.editable.nombre = this.acercaDe.nombre;
+    // }else{
+    //   this.acercaDe.nombre = this.editable.nombre;
+    // }
+    // if(this.editable.puesto == ""){ 
+    // this.editable.puesto = this.acercaDe.puesto;
+    // }else{
+    //   this.acercaDe.puesto = this.editable.puesto;
+    // }
+    // if(this.editable.info == ""){
+    // this.editable.info = this.acercaDe.info;
+    // }else{
+    //   this.acercaDe.info = this.editable.info;
+    // }
+    // if(this.editable.img == ""){
+    // this.editable.img = this.acercaDe.img;
+    // }else{
+    //   this.acercaDe.img = this.editable.img;
+    // }
+    this.editable.nombre = this.acercaDe.nombre;
+    this.editable.puesto = this.acercaDe.puesto;
+    this.editable.info = this.acercaDe.info;
+    this.editable.img = this.acercaDe.img;
 
+    this.datosPortfolio.actualizarDatos(this.acercaDe).subscribe({
+          next: (response: AcercaDe) => {
+            console.log(response)
+            this.getDatos();
+          }
+        })
   }
     
   
