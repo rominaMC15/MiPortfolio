@@ -16,6 +16,8 @@ h3 .fa-solid{
     margin-left: 20px;
     margin-top: 20px;
     text-decoration: underline;
+    display: flex;
+    flex-direction: row;
 }
 
 .row{
@@ -103,4 +105,12 @@ a{
 
 h3 .fa-solid{
     font-size: 15px;
+}
+
+.btnModal{
+    background-color: blueviolet;
+    padding: 3px;
+    border-radius: 10px;
+    margin: 5px;
+    color: white;
 }

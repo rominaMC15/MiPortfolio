@@ -55,6 +55,7 @@ export class AcercaDeComponent implements OnInit {
   onEditar(){
     
     console.log(this.editable)
+    this.edit=false;
 
     this.datosPortfolio.actualizarDatos(this.editable).subscribe({
           next: (response: AcercaDe) => {

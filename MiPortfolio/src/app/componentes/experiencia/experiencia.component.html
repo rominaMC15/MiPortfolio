@@ -1,6 +1,7 @@
 <div class="row">
     <div class="titulo">
         <h1>Experiencias laborales</h1>
+        <a (click)="Agregar()" ><app-icons-add></app-icons-add></a>
     </div>
     
     <ul class="experiencia-list">
@@ -41,8 +42,9 @@
         <input type="text" id="comienzoemp" placeholder="Fecha de Comienzo" [(ngModel)]="exp.comienzo" >
         <label for="">Ingrese la fecha de fin:</label>
         <input type="text" id="finemp" placeholder="Fecha de Fin" [(ngModel)]="exp.fin" >
-        <button (click)="onEditar()" >Confirmar</button>
-        <button (click)="Editar(exp)" >Cerrar</button>
+        <button class="btnModal" (click)="onEditar()" >Confirmar</button>
+        <button class="btnModal" (click)="Editar(exp)" >Cerrar</button>
+        <button class="btnModal" (click)="onAgregar(temporalAg)" >Agregar Nuevo</button>
     </div>
 </div>
 

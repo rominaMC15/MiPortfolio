@@ -36,6 +36,7 @@ export class EducacionComponent implements OnInit {
 
 
   onEditar(){
+    this.edit=false;
     this.datosPortfolio.actualizarDatosEdu(this.temporal).subscribe({
       next: (response:Educacion) => {
         alert("Sus datos han sido modificados!")
@@ -44,12 +45,13 @@ export class EducacionComponent implements OnInit {
     })
   }
 
-  Agregar(dato:Educacion){
+  Agregar(){
     this.edit=!this.edit;
     this.temporal=this.temporalAg;
   }
 
   onAgregar(temporalAg:Educacion){
+    this.edit=false;
     this.temporal=temporalAg;
     this.datosPortfolio.agregarDatosEdu(this.temporalAg).subscribe({
       next: (response:Educacion) => {

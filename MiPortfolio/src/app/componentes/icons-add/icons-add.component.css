@@ -10,8 +10,9 @@
     margin-right: 5px;
     color: white;
     cursor: pointer;
+    font-size: 4vh;
 }
 
-h3 .fa-solid{
-    font-size: 15px;
-}
+/* h3 .fa-solid{
+    font-size: 5vh;
+} */

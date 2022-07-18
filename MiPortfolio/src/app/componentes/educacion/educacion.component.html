@@ -1,6 +1,7 @@
 <div class="row">
     <div class="titulo">
         <h1>Educación</h1>
+        <a (click)="Agregar()" ><app-icons-add></app-icons-add></a>
     </div>
     
     <ul class="educacion-list">
@@ -14,7 +15,7 @@
     
                 <div class="educ1" *ngIf="educacion">
                     <div class="icon">
-                        <a (click)="Agregar(educacion)" ><app-icons-add></app-icons-add></a>
+                        <!-- <a (click)="Agregar(educacion)" ><app-icons-add></app-icons-add></a> -->
                         <a (click)="Editar(educacion)"><app-icons></app-icons></a>
                         <a (click)="onBorrar(educacion)" ><app-icons-trash></app-icons-trash></a>
                     </div>
@@ -42,9 +43,9 @@
         <input type="text" id="comienzoest" placeholder="Fecha de comienzo" [(ngModel)]="temporal.comienzo" >
         <label for="">Ingrese fecha de fin:</label>
         <input type="text" id="finest" placeholder="Fecha de fin" [(ngModel)]="temporal.fin" >
-        <button (click)="Editar(temporal)">Cerrar</button>
-        <button (click)="onEditar()" >Confirmar</button>
-        <button (click)="onAgregar(temporalAg)" >Agregar Nuevo</button>
+        <button class="btnModal" (click)="Editar(temporal)">Cerrar</button>
+        <button class="btnModal" (click)="onEditar()" >Confirmar</button>
+        <button class="btnModal" (click)="onAgregar(temporalAg)" >Agregar Nuevo</button>
     </div>
 
 </div>
