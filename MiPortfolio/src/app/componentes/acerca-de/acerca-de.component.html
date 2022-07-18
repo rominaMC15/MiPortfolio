@@ -3,23 +3,18 @@
         <div class="texto" *ngIf="acercaDe">
                 <h1>{{acercaDe.presentacion}} {{acercaDe.nombre}}</h1>
                 <h3>{{acercaDe.puesto}}</h3>
-                
                 <br>
                 <p><b>{{acercaDe.info}}</b></p>
 
                 <div class="icon">
                         <a (click)="Editar()"><app-icons></app-icons></a>
                 </div>
-
-                
-        
         </div>
 
         <div class="imagen" *ngIf="acercaDe">
             <img alt="tec" src={{acercaDe.img}} class="img">
         </div>
 
-        
 </div>
 
 <div class="datos"  *ngIf="edit" >
@@ -33,5 +28,4 @@
         <input type="text" id="imgpres" [(ngModel)]="editable.img" placeholder="URL Imagen">
         <button type="button" id="btnedit1" (click)="onEditar()">Confirmar</button>
         <button type="button" id="btnedit" (click)="Editar()">Cerrar</button>
-
 </div>

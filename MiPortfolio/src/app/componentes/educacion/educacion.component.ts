@@ -22,10 +22,6 @@ export class EducacionComponent implements OnInit {
   temporalAg:Educacion={"lugar":"","titulo":"","img":"","comienzo":"","fin":""}
 
   ngOnInit(): void {
-    // this.datosPortfolio.obtenerDatos().subscribe(data=>{
-    //   this.educacionList=data.educacion;
-    // })
-
     this.getDatosEducacion();
   }
 
@@ -61,10 +57,6 @@ export class EducacionComponent implements OnInit {
     })
   }
 
-  // Borrar(dato:Educacion){
-  //   this.temporal=dato;
-  // }
-
   onBorrar(id:Educacion){
     this.temporalElim=id;
     this.datosPortfolio.borrarEdu(this.temporalElim).subscribe({
@@ -75,7 +67,6 @@ export class EducacionComponent implements OnInit {
     })
   }
   
-
   public getDatosEducacion():void{
     this.datosPortfolio.getDatosEducacion().subscribe({
       next: (response: Educacion[]) =>{

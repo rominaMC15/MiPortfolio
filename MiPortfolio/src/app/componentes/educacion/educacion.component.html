@@ -14,23 +14,21 @@
                 
     
                 <div class="educ1" *ngIf="educacion">
+
                     <div class="icon">
-                        <!-- <a (click)="Agregar(educacion)" ><app-icons-add></app-icons-add></a> -->
                         <a (click)="Editar(educacion)"><app-icons></app-icons></a>
                         <a (click)="onBorrar(educacion)" ><app-icons-trash></app-icons-trash></a>
                     </div>
+
                     <h3>{{educacion.lugar}}</h3>
                     <h4>{{educacion.titulo}}</h4>
                     <h5>{{educacion.comienzo}} - {{educacion.fin}}</h5>
+
                 </div>
         
             </div>
         </li>
     </ul>
-
-    <!-- <div class="icon">
-        <a (click)="Editar()"><app-icons></app-icons></a>
-    </div> -->
 
     <div class="datos" *ngIf="edit">
         <label for="">Ingrese su establecimiento:</label>

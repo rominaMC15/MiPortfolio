@@ -13,14 +13,10 @@ import { EditServiceService } from 'src/app/servicios/edit-service.service';
     constructor(public editServiceService:EditServiceService) { }
 
     ngOnInit(): void {
-        // this.editIcon = this.editServiceService.valorIcon;
     }
 
-    // onToggle(){
-    //     this.editIcon = this.editServiceService.valorIcon;
-    //   }
 
     onDelete(){
-
     }
+    
   }

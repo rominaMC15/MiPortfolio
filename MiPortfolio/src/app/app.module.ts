@@ -15,8 +15,6 @@ import { HabilidadesComponent } from './componentes/habilidades/habilidades.comp
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { LoginComponent } from './componentes/login/login.component';
-import { Login2Component } from './componentes/login2/login2.component';
-import { Login3Component } from './componentes/login3/login3.component';
 import { IconsComponent } from './componentes/icons/icons.component';
 import { IconsTrashComponent } from './componentes/icons-trash/icons-trash.component';
 import { IconsAddComponent } from './componentes/icons-add/icons-add.component';
@@ -34,8 +32,6 @@ import { IconsAddComponent } from './componentes/icons-add/icons-add.component';
     ProyectosComponent,
     FooterComponent,
     LoginComponent,
-    Login2Component,
-    Login3Component,
     IconsComponent,
     IconsTrashComponent,
     IconsAddComponent

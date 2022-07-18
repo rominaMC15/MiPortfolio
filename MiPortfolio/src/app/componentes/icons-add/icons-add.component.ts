@@ -15,7 +15,6 @@ export class IconsAddComponent implements OnInit {
   }
 
   onDelete(){
-
   }
 
 }

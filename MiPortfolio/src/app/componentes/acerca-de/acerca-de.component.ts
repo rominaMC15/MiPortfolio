@@ -1,6 +1,5 @@
 import { HttpResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-//import { FaLayersTextComponent } from '@fortawesome/angular-fontawesome';
 import { AcercaDe } from 'src/app/models/acerca-de.model';
 import { EditServiceService } from 'src/app/servicios/edit-service.service';
 import { PortfolioService } from 'src/app/servicios/portfolio.service';
@@ -22,12 +21,9 @@ export class AcercaDeComponent implements OnInit {
 
 
   ngOnInit(): void {
- 
     this.datosPortfolio.getDatos().subscribe(data => {
       this.acercaDe=data[0];
-      // console.log(this.acercaDe);
     });
-
   };
 
   Editar(){
@@ -53,10 +49,7 @@ export class AcercaDeComponent implements OnInit {
 
 
   onEditar(){
-    
-    console.log(this.editable)
     this.edit=false;
-
     this.datosPortfolio.actualizarDatos(this.editable).subscribe({
           next: (response: AcercaDe) => {
             console.log(response)

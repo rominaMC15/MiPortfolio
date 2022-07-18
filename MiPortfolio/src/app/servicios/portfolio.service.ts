@@ -20,10 +20,6 @@ export class PortfolioService {
     return this.http.get('./assets/data/data.json');
     }
 
-  // public getDatos():Observable<AcercaDe>{
-  //   return this.http.get<AcercaDe>(this.apiServerUrl + '/persona/ver');
-  // }
-
   //VER DATOS
   public getDatos():Observable<any>{
     return this.http.get(`${this.apiServerUrl}/persona/ver`);
@@ -36,7 +32,6 @@ export class PortfolioService {
   getDatosEducacion(): Observable<Educacion[]> {
     return this.http.get<Educacion[]>(`${this.apiServerUrl}/educacion/ver`);
   }
-
 
   //ACTUALIZAR DATOS
   public actualizarDatos(acercaDe: AcercaDe):Observable<AcercaDe>{

@@ -12,7 +12,7 @@ export class ExperienciaComponent implements OnInit {
   experienciaList:any;
   edit:boolean=false;
 
-  constructor(private datosPortfolio:PortfolioService, public editServiceService:EditServiceService) { }
+constructor(private datosPortfolio:PortfolioService, public editServiceService:EditServiceService) { }
 
   public experiencia : Experiencia[] = [];
   public editDatos : Experiencia | undefined;
@@ -20,11 +20,7 @@ export class ExperienciaComponent implements OnInit {
   tempExp:Experiencia={"id":0,"puesto":"","empresa":"","img":"","modo":"","comienzo":"","fin":""}
   temporalAg:Experiencia={"puesto":"","empresa":"","img":"","modo":"","comienzo":"","fin":""}
 
-  ngOnInit(): void {
-    // this.datosPortfolio.obtenerDatos().subscribe(data=>{
-    //   this.experienciaList=data.experiencia;
-    // })
-
+ngOnInit(): void {
     this.getDatosExperiencia();
  }
 
@@ -55,12 +51,12 @@ export class ExperienciaComponent implements OnInit {
 
   Agregar(){
     this.edit=!this.edit;
-    this.tempExp=this.temporalAg;
+    this.exp=this.temporalAg;
   }
 
   onAgregar(temporalAg:Experiencia){
     this.edit=false;
-    this.tempExp=temporalAg;
+    this.exp=temporalAg;
     this.datosPortfolio.agregarDatosExp(this.temporalAg).subscribe({
       next: (response:Experiencia) => {
         alert("Sus datos han sido agregados correctamente!")
