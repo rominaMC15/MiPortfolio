@@ -11,7 +11,7 @@ import { Experiencia } from '../models/experiencia';
 })
 export class PortfolioService {
   // apiServerUrl = environment.apiBaseUrl;
-  apiServerUrl:string='https://negative-loralyn-crazyro15.koyeb.app/';
+  apiServerUrl:string='miportfolio.negative-loralyn.koyeb';
 
   constructor(private http:HttpClient) { 
     
