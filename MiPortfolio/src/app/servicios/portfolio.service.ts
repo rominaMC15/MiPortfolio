@@ -10,7 +10,7 @@ import { Experiencia } from '../models/experiencia';
   providedIn: 'root'
 })
 export class PortfolioService {
-  // apiServerUrl = environment.apiBaseUrl;
+  //apiServerUrl = environment.apiBaseUrl;
   //apiServerUrl:string='https://portfoliobackromi.herokuapp.com';
   apiServerUrl:string='https://negative-loralyn-crazyro15.koyeb.app';
   //apiServerUrl:string='miportfolio.negative-loralyn.koyeb';
